@@ -1,0 +1,30 @@
+<div class="container">
+    <div *ngIf="user">
+        <div class="chat-container">
+            <div class="chats" #chatss>
+                <div *ngFor="let chat of chats">
+                    <div *ngIf="chat.owner === user.uid">
+                        <div class="chat-owner">
+                            {{chat.message}}
+                        </div>
+                    </div>
+                    <div *ngIf="chat.owner != user.uid">
+                        <div class="chat-delivered">
+                            {{chat.message}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <textarea matInput 
+                    class="mat-input-chat" 
+                    placeholder="message" 
+                    [formControl]="messageControl"
+                    autocomplete="off"
+                    aria-multiline="true"
+                ></textarea>
+                <button mat-raised-button  (click)="setChat()" class="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>

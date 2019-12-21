@@ -1,0 +1,36 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm-container{
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    padding:12px;
+    box-sizing: border-box;
+    box-shadow: 0px 0 12px #bebebe;
+    display: flex;
+    align-items: center;
+}
+
+.mat-text-input{
+    width: 100%;
+}
+
+.logBtn, .singOutBtn{
+    margin:  auto auto 16px auto;;
+    width: 50%;
+    display: block;
+}
+
+.singOutBtn{
+    background-color: #ffca28;
+}
+
+form{
+    width: 100%;
+}

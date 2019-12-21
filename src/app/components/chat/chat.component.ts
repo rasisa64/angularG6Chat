@@ -50,7 +50,7 @@ try {
 }
 }
   getChats() {
-    this.chatService.getmessages('UDX3swFUZxr9ZqmnlZV4').subscribe((chatsnapshot) => {
+    this.chatService.getmessages('yuMDbOhNgfDuZ5oB7V5R').subscribe((chatsnapshot) => {
       let data: any  =  chatsnapshot.payload.data();
       this.info = chatsnapshot.payload.data();
       let chats = []
@@ -81,6 +81,6 @@ try {
     this.info.messages = this.chats;
     console.log('here: ', info)
     console.log(this.info)
-    this.chatService.setChat('UDX3swFUZxr9ZqmnlZV4',info)
+    this.chatService.setChat('yuMDbOhNgfDuZ5oB7V5R',info)
   }
 }
